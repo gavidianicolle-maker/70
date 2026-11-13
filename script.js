@@ -50,8 +50,7 @@ if (guest && Number.isInteger(passes) && passes > 0 && passes <= 30) {
 }
 
 // Configura el número con código de país, solo dígitos, en README.md.
-const WHATSAPP_NUMBER = "51978318143"; // REEMPLAZAR por el número real
-const rsvpText = guest
+const WHATSAPP_NUMBER = "51978318143";
   ? `Hola, confirmo la invitación para los 70 años de Jesús Roberto Gavidia Iverico. Invitación a nombre de ${guest}, con ${Number.isInteger(passes) ? passes : "—"} pases. Asistiremos: `
   : "Hola, quisiera confirmar mi asistencia a los 70 años de Jesús Roberto Gavidia Iverico. Asistiremos: ";
 document.getElementById("rsvp-button").href =
