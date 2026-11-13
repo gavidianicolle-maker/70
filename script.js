@@ -47,10 +47,7 @@ if (guest && Number.isInteger(passes) && passes > 0 && passes <= 30) {
   guestPasses.textContent = "—";
   guestCaption.textContent = "Cada invitación personalizada indicará aquí el nombre y los pases asignados.";
   inviteHelp.textContent = "Vista general de la invitación. Para ver un pase personalizado, abre el enlace que te compartió la familia.";
-}
-
-// Configuración de WhatsApp
-const WHATSAPP_NUMBER = "51978318143";
+}const WHATSAPP_NUMBER = "51978318143";
 
 const rsvpText = guest && Number.isInteger(passes) && passes > 0 && passes <= 30
   ? `Hola, confirmo la invitación para los 70 años de Jesús Roberto Gavidia Iverico. Invitación a nombre de ${guest}, con ${passes} pases. Asistiremos: `
