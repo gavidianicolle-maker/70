@@ -183,3 +183,26 @@ h2{font-size:clamp(38px,5vw,54px);line-height:1.05;margin:12px 0}
     font-size: 17px;
   }
 }
+.music-player {
+  width: min(90%, 420px);
+  margin: 30px auto;
+  padding: 18px;
+  text-align: center;
+  background: #f5efe5;
+  border: 1px solid #c6a76b;
+  border-radius: 16px;
+  color: #8b6b35;
+}
+
+.music-player p {
+  font-family: Georgia, serif;
+  font-size: 18px;
+  margin: 0 0 14px;
+}
+
+.music-player iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: 0;
+  border-radius: 10px;
+}
