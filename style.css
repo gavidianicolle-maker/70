@@ -224,3 +224,14 @@ h2{font-size:clamp(38px,5vw,54px);line-height:1.05;margin:12px 0}
   line-height: 1.5;
   text-align: center;
 }
+.dress-code {
+  padding: 25px 15px;
+  text-align: center;
+}
+.dress-code-image {
+  display: block;
+  width: min(100%, 650px);
+  height: auto;
+  margin: 0 auto;
+  border-radius: 12px;
+}
