@@ -62,3 +62,63 @@ document.getElementById("rsvp-button").href =
 document.getElementById("music-toggle").addEventListener("click", () => {
   window.open("https://www.youtube.com/results?search_query=Queen+We+Are+The+Champions+official", "_blank", "noopener");
 });
+
+/* FUNCIONAMIENTO DEL CARRUSEL */
+
+document.addEventListener("DOMContentLoaded", () => {
+  const carousel = document.querySelector(".photo-carousel");
+  if (!carousel) return;
+
+  const track = carousel.querySelector(".carousel-track");
+  const slides = [...track.querySelectorAll(".carousel-slide")];
+  const prev = carousel.querySelector(".prev");
+  const next = carousel.querySelector(".next");
+  const dotsContainer = document.querySelector(".carousel-dots");
+
+  let current = 0;
+  let timer;
+
+  slides.forEach((slide, index) => {
+    const dot = document.createElement("button");
+    dot.className = "carousel-dot";
+    dot.setAttribute("aria-label", `Ver fotografía ${index + 1}`);
+    dot.addEventListener("click", () => showSlide(index));
+    dotsContainer.appendChild(dot);
+  });
+
+  const dots = [...dotsContainer.children];
+
+  function showSlide(index) {
+    current = (index + slides.length) % slides.length;
+    track.style.transform = `translateX(-${current * 100}%)`;
+
+    dots.forEach((dot, i) => {
+      dot.classList.toggle("active", i === current);
+    });
+  }
+
+  function startAutoPlay() {
+    stopAutoPlay();
+    timer = setInterval(() => showSlide(current + 1), 5000);
+  }
+
+  function stopAutoPlay() {
+    clearInterval(timer);
+  }
+
+  prev.addEventListener("click", () => {
+    showSlide(current - 1);
+    startAutoPlay();
+  });
+
+  next.addEventListener("click", () => {
+    showSlide(current + 1);
+    startAutoPlay();
+  });
+
+  carousel.addEventListener("mouseenter", stopAutoPlay);
+  carousel.addEventListener("mouseleave", startAutoPlay);
+
+  showSlide(0);
+  startAutoPlay();
+});
