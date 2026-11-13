@@ -63,15 +63,52 @@
       <p class="countdown-note" id="countdown-note">23 de diciembre de 2026 · 1:00 p. m.</p>
     </section>
 
-    <section class="gallery-section section" id="galeria">
-      <p class="eyebrow">INSTANTES QUE VIVEN EN EL CORAZÓN</p>
-      <h2>Una vida en <em>fotografías</em></h2>
-      <p class="section-lead">Cada imagen guarda una historia. Aquí reuniremos algunos de sus recuerdos más especiales.</p>
-      <div class="gallery">
-        <figure class="gallery-large"><img src="assets/fotos/recuerdo-1.jpg" alt="Recuerdo familiar 1" onerror="this.style.display='none';this.parentElement.classList.add('empty-photo')"><figcaption>Un recuerdo especial</figcaption></figure>
-        <figure><img src="assets/fotos/recuerdo-2.jpg" alt="Recuerdo familiar 2" onerror="this.style.display='none';this.parentElement.classList.add('empty-photo')"><figcaption>Momentos inolvidables</figcaption></figure>
-        <figure><img src="assets/fotos/recuerdo-3.jpg" alt="Recuerdo familiar 3" onerror="this.style.display='none';this.parentElement.classList.add('empty-photo')"><figcaption>La familia</figcaption></figure>
+<section class="gallery-section section" id="galeria">
+  <p class="eyebrow">INSTANTES QUE VIVEN EN EL CORAZÓN</p>
+  <h2>Una vida en <em>fotografías</em></h2>
+  <p class="section-lead">
+    Cada imagen guarda una historia. Aquí reuniremos algunos de sus recuerdos más especiales.
+  </p>
+
+  <div class="photo-carousel">
+    <button class="carousel-arrow prev" aria-label="Fotografía anterior">
+      &#10094;
+    </button>
+
+    <div class="carousel-window">
+      <div class="carousel-track">
+
+        <figure class="carousel-slide">
+          <img src="assets/fotos/papa-principal.jpg" alt="Jesús Roberto">
+          <figcaption>Una vida de recuerdos</figcaption>
+        </figure>
+
+        <figure class="carousel-slide">
+          <img src="assets/fotos/recuerdo-1.jpg" alt="Recuerdo especial">
+          <figcaption>Un recuerdo especial</figcaption>
+        </figure>
+
+        <figure class="carousel-slide">
+          <img src="assets/fotos/recuerdo-2.jpg" alt="Momentos inolvidables">
+          <figcaption>Momentos inolvidables</figcaption>
+        </figure>
+
+        <figure class="carousel-slide">
+          <img src="assets/fotos/recuerdo-3.jpg" alt="La familia">
+          <figcaption>La familia</figcaption>
+        </figure>
+
       </div>
+    </div>
+
+    <button class="carousel-arrow next" aria-label="Fotografía siguiente">
+      &#10095;
+    </button>
+  </div>
+
+  <div class="carousel-dots"></div>
+</section>
+
     </section>
 
     <section class="music-section section">
