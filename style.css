@@ -1,0 +1,79 @@
+*{box-sizing:border-box}
+:root{--cream:#f4eee3;--paper:#fffdf8;--sand:#e8ddca;--gold:#b49358;--gold-dark:#8d7040;--ink:#38342d;--muted:#81796c}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:Montserrat,Arial,sans-serif;font-weight:300}
+.gold-line{height:5px;background:linear-gradient(90deg,#8f713f,#e4d1a7,#a9884f)}
+.site-header{height:76px;padding:0 7%;display:flex;align-items:center;justify-content:space-between;background:rgba(255,253,248,.94);position:sticky;top:0;z-index:5;border-bottom:1px solid #eee6d8}
+.brand{font-family:"Cormorant Garamond",serif;font-size:27px;color:var(--gold-dark);text-decoration:none;font-weight:600}
+.brand span{color:#cbb78f}
+nav{display:flex;gap:28px}nav a,.nav-cta{font-size:11px;letter-spacing:1px;text-transform:uppercase;text-decoration:none;color:var(--ink)}
+.nav-cta{border:1px solid var(--gold);padding:12px 17px;color:var(--gold-dark)}
+.hero{min-height:680px;background:linear-gradient(110deg,#f4eee3 0%,#f8f4ec 56%,#e8ddca 100%);position:relative;display:flex;align-items:center;overflow:hidden;padding:70px 9%}
+.hero:before,.hero:after{content:"";position:absolute;border:1px solid rgba(180,147,88,.32);border-radius:50%;width:600px;height:600px;right:-130px;top:40px}
+.hero:after{width:500px;height:500px;right:-80px;top:90px}
+.hero-content{position:relative;z-index:2;max-width:590px;text-align:center}
+.eyebrow{font-size:10px;letter-spacing:3px;color:var(--gold-dark);font-weight:600}
+.hero-number{font-family:"Cormorant Garamond",serif;font-size:clamp(130px,20vw,230px);line-height:.72;color:var(--gold);margin:28px 0 0;font-weight:400}
+.hero-years{letter-spacing:9px;font-size:12px;margin:15px 0;color:var(--gold-dark)}
+.ornament{display:flex;align-items:center;justify-content:center;gap:14px;color:var(--gold);margin:22px auto}
+.ornament span{height:1px;width:55px;background:#cdb98e}
+h1,h2{font-family:"Cormorant Garamond",serif;font-weight:500}
+h1{font-size:clamp(40px,5vw,62px);line-height:.98;margin:0}
+h1 em,h2 em{color:var(--gold-dark);font-weight:400}
+.hero-subtitle{font-size:13px;line-height:1.9;color:var(--muted);max-width:410px;margin:20px auto 25px}
+.button{display:inline-block;text-decoration:none;text-transform:uppercase;letter-spacing:1.5px;font-size:10px;padding:16px 24px;transition:.2s}
+.button-gold{background:var(--gold);color:white;border:1px solid var(--gold)}
+.button-gold:hover{background:var(--gold-dark)}
+.button-outline{border:1px solid var(--gold);color:var(--gold-dark)}
+.hero-date{font-size:10px;letter-spacing:3px;margin-top:26px;color:var(--gold-dark)}
+.hero-photo-frame{position:absolute;z-index:1;right:9%;top:50%;transform:translateY(-50%);width:min(31vw,350px);height:440px;border:9px solid rgba(255,253,248,.78);outline:1px solid #c7ad7b;box-shadow:0 18px 50px #8d785322;background:#e2d7c4;display:flex;align-items:center;justify-content:center}
+.hero-photo-frame img{width:100%;height:100%;object-fit:cover}
+.photo-hint{position:absolute;text-align:center;padding:20px;color:#88775b;font-size:11px;line-height:1.7}
+.photo-placeholder img{display:none}
+.scroll-cue{position:absolute;bottom:22px;left:50%;color:var(--gold-dark);font-size:25px;text-decoration:none}
+.section{text-align:center;padding:95px 8%}
+.intro{background:#fffdf8}
+h2{font-size:clamp(38px,5vw,54px);line-height:1.05;margin:12px 0}
+.intro-copy,.section-lead{max-width:650px;margin:20px auto;color:var(--muted);font-size:13px;line-height:2}
+.signature{font-family:"Cormorant Garamond",serif;font-size:24px;font-style:italic;color:var(--gold-dark);margin-top:30px}
+.countdown-section{background:var(--cream)}
+.countdown{display:flex;justify-content:center;gap:14px;margin:36px auto 20px;max-width:700px}
+.countdown div{min-width:105px;padding:20px 12px;background:#fffdf8;border:1px solid #e4d8c3}
+.countdown strong{display:block;font-family:"Cormorant Garamond",serif;font-size:48px;color:var(--gold-dark);font-weight:500}
+.countdown span{font-size:9px;letter-spacing:1.5px;color:var(--muted)}
+.countdown-note,.tiny-note{font-size:11px;color:var(--muted);line-height:1.8}
+.gallery-section{background:#fffdf8}
+.gallery{max-width:960px;margin:38px auto 0;display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:16px}
+.gallery figure{margin:0;background:var(--cream);padding:9px;border:1px solid #e6dccb}
+.gallery img{width:100%;height:260px;object-fit:cover;display:block}
+.gallery-large img{height:340px}
+.gallery figcaption{font-family:"Cormorant Garamond",serif;font-size:19px;color:var(--gold-dark);padding:12px 4px 5px}
+.empty-photo{height:260px;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#eee5d6,#d9c9ad)}
+.empty-photo:before{content:"Añade aquí una fotografía";font-size:11px;color:#8b795c}
+.gallery-large.empty-photo{height:340px}
+.music-section{background:#f0e8da}
+.music-disc{width:65px;height:65px;border:1px solid var(--gold);border-radius:50%;display:grid;place-items:center;margin:0 auto 22px;color:var(--gold-dark);font-size:30px}
+.music-artist{font-family:"Cormorant Garamond",serif;font-size:24px;color:var(--gold-dark);margin:0}
+.event-section{background:#fffdf8}
+.event-card{max-width:690px;margin:35px auto 0;display:grid;grid-template-columns:1fr 1.5fr;border:1px solid #d8c7a5;text-align:left;background:#fff}
+.event-date{background:#eee5d6;display:flex;flex-direction:column;justify-content:center;align-items:center;padding:30px;color:var(--gold-dark);letter-spacing:2px;font-size:10px}
+.event-date strong{font-family:"Cormorant Garamond",serif;font-size:86px;line-height:1.1;font-weight:400}
+.event-details{padding:32px}
+.event-details p{font-size:14px;border-bottom:1px solid #eee7dc;padding-bottom:13px}
+.event-details p span{display:inline-block;width:75px;font-size:9px;letter-spacing:1px;color:var(--gold-dark);font-weight:600}
+.event-details .event-message{font-family:"Cormorant Garamond",serif;font-size:21px;color:var(--gold-dark);border:0;margin-bottom:0}
+.invite-section{background:var(--cream)}
+.sample-pass{max-width:440px;margin:35px auto 18px;padding:32px 25px;background:#fffdf8;border:1px solid #cbb486;outline:5px solid #fffdf8;box-shadow:0 8px 30px #6c58301a}
+.sample-name{font-family:"Cormorant Garamond",serif;font-size:32px;color:var(--gold-dark);margin:15px 0}
+.pass-count{display:inline-flex;align-items:baseline;gap:8px;padding:12px 24px;background:#f2eadc;color:var(--gold-dark)}
+.pass-count strong{font-family:"Cormorant Garamond",serif;font-size:43px;font-weight:500}
+.pass-count span{font-size:10px;letter-spacing:2px}
+.pass-caption,.invite-help{font-size:11px;color:var(--muted);line-height:1.8}
+.invite-section .button{margin-top:15px}
+.footer{padding:55px 20px;text-align:center;background:#e9dfcf;color:var(--gold-dark);font-family:"Cormorant Garamond",serif;font-size:21px}
+.footer-70{font-size:75px;line-height:1;margin:0;color:var(--gold)}
+.footer small{font-family:Montserrat,sans-serif;font-size:9px;letter-spacing:2px}
+.music-toggle{position:fixed;bottom:18px;right:18px;z-index:6;background:#fffdf8;border:1px solid #c6ad7d;color:var(--gold-dark);padding:12px 15px;border-radius:30px;box-shadow:0 5px 20px #00000012;font-family:Montserrat,sans-serif;font-size:12px}
+.music-toggle span{font-size:10px;margin-left:5px}
+@media(max-width:850px){.hero{padding:65px 7%;min-height:780px;justify-content:center;align-items:flex-start}.hero-content{margin-top:0}.hero-photo-frame{position:relative;right:auto;top:auto;transform:none;width:190px;height:230px;margin:35px auto 0}.hero{display:block}.hero:before,.hero:after{right:-350px}.scroll-cue{display:none}.site-header{padding:0 5%;height:65px}nav{display:none}.gallery{grid-template-columns:1fr 1fr}.gallery-large{grid-column:1/-1}.gallery-large img{height:270px}.gallery img{height:220px}}
+@media(max-width:520px){.section{padding:70px 6%}.hero{min-height:0;padding:60px 6% 45px}.hero-number{font-size:155px}.hero-photo-frame{height:230px}.countdown{gap:6px}.countdown div{min-width:0;flex:1;padding:15px 5px}.countdown strong{font-size:35px}.countdown span{font-size:7px;letter-spacing:.5px}.gallery{grid-template-columns:1fr}.gallery-large{grid-column:auto}.gallery img,.gallery-large img{height:260px}.event-card{grid-template-columns:1fr}.event-date{padding:20px}.event-date strong{font-size:65px}.event-details{padding:20px}.nav-cta{font-size:9px;padding:10px}.brand{font-size:23px}}

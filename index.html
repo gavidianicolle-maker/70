@@ -1,1 +1,125 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4eee3">
+  <meta name="description" content="Celebramos los 70 años de Jesús Roberto Gavidia Iverico.">
+  <title>70 años · Jesús Roberto Gavidia Iverico</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="gold-line"></div>
+  <header class="site-header">
+    <a class="brand" href="#inicio">JRG <span>·</span> 70</a>
+    <nav aria-label="Navegación principal">
+      <a href="#historia">Su historia</a>
+      <a href="#galeria">Recuerdos</a>
+      <a href="#celebracion">Celebración</a>
+    </nav>
+    <a class="nav-cta" href="#invitacion">Ver invitación</a>
+  </header>
 
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-wash"></div>
+      <div class="hero-content">
+        <p class="eyebrow">UNA VIDA · MIL RECUERDOS · UN DÍA PARA CELEBRAR</p>
+        <p class="hero-number">70</p>
+        <p class="hero-years">AÑOS</p>
+        <div class="ornament"><span></span> ✦ <span></span></div>
+        <h1>Jesús Roberto<br><em>Gavidia Iverico</em></h1>
+        <p class="hero-subtitle">Celebramos una vida llena de historias, aprendizajes y amor.</p>
+        <a class="button button-gold" href="#invitacion">Descubrir la invitación</a>
+        <p class="hero-date">23 · DICIEMBRE · 2026</p>
+      </div>
+      <div class="hero-photo-frame">
+        <img src="assets/fotos/papa-principal.jpg" alt="Fotografía de Jesús Roberto" onerror="this.style.display='none';this.parentElement.classList.add('photo-placeholder')">
+        <span class="photo-hint">Aquí irá la fotografía principal de papá</span>
+      </div>
+      <a class="scroll-cue" href="#historia" aria-label="Deslizar hacia abajo">↓</a>
+    </section>
+
+    <section class="intro section" id="historia">
+      <p class="eyebrow">SETENTA AÑOS DE VIDA</p>
+      <h2>Una historia que merece<br><em>ser celebrada</em></h2>
+      <div class="ornament"><span></span> ✦ <span></span></div>
+      <p class="intro-copy">Hay personas que dejan huella en cada etapa de la vida. Hoy celebramos a un hombre cuya historia está hecha de momentos, experiencias, familia y recuerdos que permanecerán para siempre.</p>
+      <p class="signature">Con todo nuestro cariño, su familia.</p>
+    </section>
+
+    <section class="countdown-section section">
+      <p class="eyebrow">EL MOMENTO SE ACERCA</p>
+      <h2>La cuenta regresiva</h2>
+      <div class="countdown" id="countdown" aria-live="polite">
+        <div><strong id="days">--</strong><span>DÍAS</span></div>
+        <div><strong id="hours">--</strong><span>HORAS</span></div>
+        <div><strong id="minutes">--</strong><span>MINUTOS</span></div>
+        <div><strong id="seconds">--</strong><span>SEGUNDOS</span></div>
+      </div>
+      <p class="countdown-note" id="countdown-note">23 de diciembre de 2026 · 1:00 p. m.</p>
+    </section>
+
+    <section class="gallery-section section" id="galeria">
+      <p class="eyebrow">INSTANTES QUE VIVEN EN EL CORAZÓN</p>
+      <h2>Una vida en <em>fotografías</em></h2>
+      <p class="section-lead">Cada imagen guarda una historia. Aquí reuniremos algunos de sus recuerdos más especiales.</p>
+      <div class="gallery">
+        <figure class="gallery-large"><img src="assets/fotos/recuerdo-1.jpg" alt="Recuerdo familiar 1" onerror="this.style.display='none';this.parentElement.classList.add('empty-photo')"><figcaption>Un recuerdo especial</figcaption></figure>
+        <figure><img src="assets/fotos/recuerdo-2.jpg" alt="Recuerdo familiar 2" onerror="this.style.display='none';this.parentElement.classList.add('empty-photo')"><figcaption>Momentos inolvidables</figcaption></figure>
+        <figure><img src="assets/fotos/recuerdo-3.jpg" alt="Recuerdo familiar 3" onerror="this.style.display='none';this.parentElement.classList.add('empty-photo')"><figcaption>La familia</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="music-section section">
+      <div class="music-disc">♫</div>
+      <p class="eyebrow">UNA CANCIÓN PARA ESTE DÍA</p>
+      <h2>We Are the Champions</h2>
+      <p class="music-artist">Queen</p>
+      <p class="section-lead">La música también cuenta historias. Reproduce la canción elegida para acompañar este homenaje.</p>
+      <a class="button button-outline" href="https://www.youtube.com/results?search_query=Queen+We+Are+The+Champions+official" target="_blank" rel="noopener">▶ Escuchar canción</a>
+      <p class="tiny-note">La reproducción se inicia solo cuando pulses el botón. Se abre una búsqueda de la canción en YouTube.</p>
+    </section>
+
+    <section class="event-section section" id="celebracion">
+      <p class="eyebrow">RESERVA ESTA FECHA</p>
+      <h2>Nos encontramos para <em>celebrar</em></h2>
+      <div class="event-card">
+        <div class="event-date"><span>MIÉRCOLES</span><strong>23</strong><span>DICIEMBRE · 2026</span></div>
+        <div class="event-details">
+          <p><span>HORA</span> 1:00 p. m.</p>
+          <p><span>LUGAR</span> Villa Alessandra</p>
+          <p class="event-message">Será una alegría compartir este día contigo.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="invite-section section" id="invitacion">
+      <p class="eyebrow">UNA INVITACIÓN ESPECIAL</p>
+      <h2>Queremos compartir<br><em>este día contigo</em></h2>
+      <p class="section-lead">Cada familia recibirá una invitación personalizada con el nombre y la cantidad de pases asignados.</p>
+      <div class="sample-pass">
+        <p class="eyebrow">PASE DE INVITACIÓN</p>
+        <p class="sample-name" id="guest-name">Familia invitada</p>
+        <div class="pass-count"><strong id="guest-passes">—</strong><span>PASES</span></div>
+        <p class="pass-caption" id="guest-caption">Esta invitación ha sido preparada especialmente para ustedes.</p>
+      </div>
+      <p class="invite-help" id="invite-help">Si recibiste un enlace personalizado, tu nombre y tus pases aparecerán aquí.</p>
+      <a class="button button-gold" id="rsvp-button" href="#" target="_blank" rel="noopener">Confirmar por WhatsApp</a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="ornament"><span></span> ✦ <span></span></div>
+    <p class="footer-70">70</p>
+    <p>Jesús Roberto Gavidia Iverico</p>
+    <small>Con amor, su familia · 23.12.2026</small>
+  </footer>
+
+  <button class="music-toggle" id="music-toggle" type="button" aria-label="Abrir canción en YouTube">♫ <span>La canción de papá</span></button>
+  <script src="script.js"></script>
+</body>
+</html>
