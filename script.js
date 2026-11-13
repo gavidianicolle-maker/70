@@ -49,12 +49,19 @@ if (guest && Number.isInteger(passes) && passes > 0 && passes <= 30) {
   inviteHelp.textContent = "Vista general de la invitación. Para ver un pase personalizado, abre el enlace que te compartió la familia.";
 }
 
-// Configura el número con código de país, solo dígitos, en README.md.
+// Configuración de WhatsApp
 const WHATSAPP_NUMBER = "51978318143";
-  ? `Hola, confirmo la invitación para los 70 años de Jesús Roberto Gavidia Iverico. Invitación a nombre de ${guest}, con ${Number.isInteger(passes) ? passes : "—"} pases. Asistiremos: `
+
+const rsvpText = guest && Number.isInteger(passes) && passes > 0 && passes <= 30
+  ? `Hola, confirmo la invitación para los 70 años de Jesús Roberto Gavidia Iverico. Invitación a nombre de ${guest}, con ${passes} pases. Asistiremos: `
   : "Hola, quisiera confirmar mi asistencia a los 70 años de Jesús Roberto Gavidia Iverico. Asistiremos: ";
-document.getElementById("rsvp-button").href =
-  `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(rsvpText)}`;
+
+const rsvpButton = document.getElementById("rsvp-button");
+
+if (rsvpButton) {
+  rsvpButton.href = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(rsvpText)}`;
+}
+
 
 // Botón de música: abre la búsqueda de la canción; los navegadores no permiten
 // reproducir audio automáticamente sin interacción del visitante.
