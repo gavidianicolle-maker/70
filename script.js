@@ -62,9 +62,6 @@ if (rsvpButton) {
 
 // Botón de música: abre la búsqueda de la canción; los navegadores no permiten
 // reproducir audio automáticamente sin interacción del visitante.
-document.getElementById("music-toggle").addEventListener("click", () => {
-  window.open("https://www.youtube.com/results?search_query=Queen+We+Are+The+Champions+official", "_blank", "noopener");
-});
 
 /* FUNCIONAMIENTO DEL CARRUSEL */
 
